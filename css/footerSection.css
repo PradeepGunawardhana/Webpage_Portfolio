@@ -1,0 +1,122 @@
+#footer{
+    background-color:#ECF0F3 ;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4em 1.5em ;
+    gap:1em;
+
+}
+.footer-content-up{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 3em;
+
+}
+.footer-navbar ul{
+    display: flex;
+
+    list-style: none;
+    gap: 3em;
+    padding: 0.4em 1.5em ;
+    align-items: center;
+
+}
+.footer-navbar ul a{
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.5 ease;
+
+}
+.footer-navbar ul a:hover{
+    color: #FD4520;
+
+}
+.footer-social-icons{
+    display: flex;
+    gap: 1.5em;
+    font-size: 2.2rem;
+   
+}
+.footer-social-icons i{
+    color: #454545;
+    transition: all 0.5s ease;
+
+}
+
+
+.footer-social-icons i:hover{
+    transform: translateY(-5px);
+    color: #FD4520;
+}
+
+.footer-container hr{
+    border: none;
+    color: rgb(87, 87, 87);
+    border-bottom: 5px solid ;
+}
+.footer-content-down{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.footer-content-down span{
+    color: #FD4520;
+    font-size: 1.3rem;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footer-navbar ul{
+        gap: 1em;
+        padding: 0;
+    }
+    .footer-social-icons{
+        gap: 0.6em;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .footer-navbar{
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-container{
+        padding: 0;
+     
+    }
+    .footer-navbar{
+        display: none;
+    }
+    .footer-content-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-content-up .logo a{
+        font-size: 1.2rem;
+    }
+    .footer-social-icons{
+        font-size: 2.5rem;
+    }
+    .footer-content-down{
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content-down p{
+        font-size: 0.8rem;
+    }
+}

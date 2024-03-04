@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+
+body{
+    background-color:#ECF0F3 ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em ;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2em;
+
+
+}
+.logo a{
+    
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    
+}
+.logo span{
+
+    color: #FD4520;
+    font-size: 1.8em;
+
+
+}
+nav li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+nav li a:hover{
+    color: #FD4520;
+}
+nav li button{
+    padding: 0.3em 1em;
+    color: #FD4520;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+nav li button:hover{
+    background-color: #FD4520;
+    color: #fff;
+    border-color: #fff;
+    font-size: 1.1rem;
+}
+.wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.content{
+    margin-top: 3em;
+    padding: 0 2em;
+    min-width: 600px;
+
+}
+.row{
+    margin-bottom: 1em;
+}
+.row label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.6em;
+}
+.row input{
+    width: 100%;
+    padding: 0.4em;
+    font-size: 0.9rem;
+    outline-color: #FD4520;
+}
+.row textarea{
+    width: 100%;
+    padding: 0.4em;
+    font-size: 0.9rem;
+    outline-color: #FD4520;
+    min-width: 100%;
+    min-height: 5em;
+}
+.title{
+
+    margin-bottom: 1.3em;
+
+}

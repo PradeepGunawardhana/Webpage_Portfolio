@@ -1,0 +1,218 @@
+#contact{
+    background-color:#272528 ;
+
+
+}
+.contact-container{
+     display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+   
+
+}
+.heading-content{
+    /* margin-top: 0.2em; */
+    color: #fff;
+
+}
+.heading-content h1{
+    font-size: 3rem;
+    
+}
+
+.heading-content span{
+    font-weight: 250;
+}
+
+
+.frm{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+
+    align-content:space-between;
+    grid-gap: 4em;
+
+
+}
+
+.contact-left{
+    max-width: 700px;
+    min-width: 350px;
+
+
+}
+.contact-left form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+
+}
+
+
+.contact-row input,.contact-row textarea {
+
+    color: #fff;
+    
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #FD4520 ;
+    background-color: #3c3b3c;
+    outline: none;
+    border-radius: 10px;
+
+}
+.contact-row textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 250px;
+    min-height: 150px;
+
+    
+}
+.contact-row input:focus ,.contact-row textarea:focus{
+    outline: 2px solid 
+    #FD4520;
+}
+
+.contact-row button{
+    padding: 0.55em;
+    font-size: 1.2rem;
+    /* background-color: #5f5c5f; */
+    border-color: #fff;
+    background-color: #3c3b3c;
+    border-radius: 10px;
+    color: #fff;
+    border-width: 1.5px;
+    /* border-bottom: 2px solid #FD4520 ; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contact-row button:hover{
+    background-color: #dd2e0b;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+/* ................... Contact Right................. */
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 700px;
+    min-width: 350px;
+
+}
+
+.contact-right .contact-row{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    justify-content: flex-start;
+    color: #dfdfdf;
+    font-size: 1.2rem;
+}
+
+.contact-right .contact-row .media{
+    font-size: 1rem;
+}
+
+.contact-right .contact-row a{
+
+    text-decoration: none;
+
+    color: #FD4520;
+    transition: all 0.3s ease;
+
+}
+.contact-right .contact-row a:hover{
+
+    color: #dd2e0b;
+}
+.contact-right .contact-row hr{
+    margin-top: 0.5em;
+    border: none;
+
+    /* border: 2px solid #3c3b3c; */
+    height: 3px;
+    background: linear-gradient(to right, transparent, #5f5c5f, transparent);
+    border-radius: 20px;
+}
+.contact-right i{
+  
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+   
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+    .frm{
+        grid-gap: 1.5em;
+    }
+    .contact-right .contact-row{
+        font-size: 0.96rem;
+    }
+    .contact-container{
+        padding: 0 1em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .contact-container{
+        padding: 0 2em;
+     
+    
+    }
+    .contact-right {
+        margin-bottom: 2em;
+    }
+
+
+}
+@media (max-width: 575.98px) {
+  
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2em;
+        
+    }
+
+    .heading-content h1{
+        font-size: 1.2rem;
+    }
+
+    .contact-row input,.contact-row textarea{
+        font-size: 0.7rem;
+    }
+    .contact-left form{
+        width: 90%;
+    }
+
+    .contact-row button{
+        font-size: 0.7rem;
+        padding: 0.3em;
+        border-radius: 7px;
+    }
+
+
+
+    .contact-right .contact-row{
+        gap: 0.2em;
+    }
+    .contact-right i{
+        font-size: 1.5rem;
+    }
+  .data a{
+    font-size: 0.8rem;
+  }
+}
